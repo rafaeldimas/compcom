@@ -1,0 +1,194 @@
+/*===========RESET BASICO==========*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.4em;
+}
+html,body {	font-size: 16px; background-color: #ecf0f1; }
+
+p {	font-size: 1rem; }
+
+h1 { font-weight: 700; }
+
+h2 { color: #111; }
+
+ul { list-style: none; }
+
+a {	text-decoration: none; }
+
+img { max-width: 100%; }
+
+/*=============Header=============*/
+header {
+	width: 100%;
+}
+.topo {
+	height: 70px;
+	background-color: #ecf0f1;
+}
+.logo {
+	width: 15%;
+}
+
+.logo a {
+	font-size: 0;
+	width: 150px;
+	height: 70px;
+	padding: 5px 10px;
+	margin-left: 50px;
+	float: left;
+	background-image: url(img/logo1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.social {
+	margin-top: 15px;
+	width: calc(85% - 50px);
+	float: right;
+	padding-right: 50px; 
+}
+
+.social li {
+	float: right;
+	padding: 10px 15px;
+}
+.social li a {
+	color: #111;
+	transition: all .5s;
+}
+
+.social li a:hover {
+	color: #fff;
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.menu {
+	clear: both;
+	width: 100%;
+	height: 50px;
+	float: left;
+
+	background-color: #2A0A29;
+	position: relative;
+	z-index: 1;
+}
+.menu ul {
+	width: 50%;
+	margin: 0 auto;
+}
+.menu ul a {
+	float: left;
+	padding: 14px 15px;
+	color: #F2F2F2;
+	transition: all .5s;
+}
+@keyframes menu {
+	0% {
+		transform: rotateX(0);
+	}
+	50% {
+		transform: rotateX(180deg);
+	}
+	100% {
+		transform: rotateX(0);
+	}
+}
+.menu ul a:hover {
+	color: #111;
+	background-color: #ecf0f1;
+
+	animation-name: menu;
+	animation-duration: .5s;
+	animation-delay: .2s;
+	animation-timing-function: linear;	
+	animation-iteration-count: 1;
+}
+
+#owl-demo .item {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.conteudo {
+	float: left;
+}
+.conteudo header {
+	padding: 2px 50px;
+	width: 100%;
+	height: 50px;
+}
+.conteudo article {
+	padding: 1%;
+	margin: 1%;
+	float: left;
+	width: 23%;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: #333;
+}
+
+.conteudo article:hover {
+	margin-top: 0;
+}
+
+article header h1 i {
+	padding-right: 10px;
+	color: #2A0A29;
+	font-weight: 700;
+}
+
+.contato {
+	float: left;
+	padding: 1%;
+	width: 100%;
+	background-image: url(img/atendimento.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.contato::before {
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+}
+.contato form{
+	/*float: left;*/
+	position: relative;
+	width: 50%;
+	padding: 1%;
+	background-color: rgba(255,255,255,.5);
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+.contato form input {
+	height: 44px;
+}
+.contato form input,textarea,label {
+	border-radius: 5px;
+	display: block;
+}
+
+.contato h1 i {
+	padding-right: 10px;
+	color: #2A0A29;
+	font-weight: 700;
+}
+.map {
+	float: right;
+	width: 47%;
+	/*border-radius: 10px;*/
+}
+.map iframe {
+	/*border-radius: 10px;*/
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	border: none;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
