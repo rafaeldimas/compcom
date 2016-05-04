@@ -18,3 +18,11 @@ $(document).ready(function() {
 });
 
 });
+$(document).scroll(function() {
+  if ($(this).scrollTop() > 561) {
+    $("#alvo").addClass("menufixo");
+    $("#alvo").addAtribut
+  } else {
+    $('#alvo').removeClass("menufixo");
+  }
+})

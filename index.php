@@ -24,7 +24,7 @@
 				<li><a href="" title=""><i class="fa fa-facebook fa-lg"></i></a></li>
 			</ul>
 		</div>
-		<nav class="menu">
+		<nav class="menu" id="alvo">
 			<ul>
 				<a href="#"><li>Inicio</li></a>
 				<a href="#"><li>Quem Somos</li></a>
@@ -68,19 +68,24 @@
 		</article>
 	</article>
 	<section class="contato">
-		<h1><i class="fa fa-angle-double-right"></i>Contato</h1>
-		<form action="valida.php">
-			<label for="nome">Nome: </label>
-			<input type="text" name="nome" id="nome" placeholder="Nome" required>
-			<label for="email">E-mail: </label>
-			<input type="email" name="email" id="email" placeholder="seuemail@site.com" required>
-			<label for="assunto">Assunto: </label>
-			<input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
-			<label for="mensagem">Mensagem:</label>
-			<textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
-			<input type="submit" value="Enviar">
-		</form>
-		
+		<div class="teste">
+			<h1><i class="fa fa-angle-double-right"></i>Contato</h1>
+			<form action="valida.php">
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" placeholder="Nome" required>
+				<label for="email">E-mail: </label>
+				<input type="email" name="email" id="email" placeholder="seuemail@site.com" required>
+				<label for="assunto">Assunto: </label>
+				<input type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+				<label for="mensagem">Mensagem:</label>
+				<textarea name="mensagem" id="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+			<div class="dados">
+				<p><i class="fa fa-whatsapp" aria-hidden="true"></i>(16) 98805-5328</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i>16) 98805-5328</p>
+			</div>
+		</div>
 	</section>
 	<script type="text/javascript" src="imports/jquery.min.js"></script>
 	<script type="text/javascript" src="imports/owl-carousel/owl.carousel.min.js"></script>
