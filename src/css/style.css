@@ -165,11 +165,12 @@ article header h1 i {
 	background-color: rgba(0,0,0,0.5);
 }
 .teste {
+	padding: 1%;
 	width: 100%;
 	float: left;
 	position: relative;
 	z-index: 1;
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,.5);
 	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
 .contato form{
@@ -180,6 +181,7 @@ article header h1 i {
 }
 .contato form input {
 	height: 44px;
+	background-color: #00ff00; 
 }
 .contato form input,textarea,label {
 	border-radius: 5px;
