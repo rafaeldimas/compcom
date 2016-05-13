@@ -50,7 +50,7 @@ gulp.task('minify-js', function () {
 
 gulp.task('minify-html', function() {
   gulp.src(filesHTML)
-  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
   .pipe(gulp.dest('./dist'))
 });
 

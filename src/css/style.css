@@ -8,9 +8,11 @@
 }
 html,body {	font-size: 16px; background-color: #ecf0f1; }
 
+input:focus,textarea:focus { outline: none; }
+
 p {	font-size: 1rem; }
 
-h1 { font-weight: 700; }
+h1 { font-weight: 700; color: #4B0082; }
 
 h2 { color: #111; }
 
@@ -133,6 +135,7 @@ header {
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 	color: #333;
 	cursor: pointer;
+	transition: all .5s;
 }
 
 .conteudo article:hover {
@@ -164,7 +167,7 @@ article header h1 i {
 	position: absolute;
 	background-color: rgba(0,0,0,0.5);
 }
-.teste {
+.container {
 	padding: 1%;
 	width: 100%;
 	float: left;
@@ -173,26 +176,65 @@ article header h1 i {
 	background-color: rgba(255,255,255,.5);
 	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
+.container p {
+	margin-bottom: 1%;
+}
 .contato form{
 	float: left;
 	position: relative;
 	width: 45%;
 	padding: 1%;
 }
-.contato form input {
+.contato form input,textarea {
 	height: 44px;
-	background-color: #00ff00; 
+	width: 100%;
+	background-color: #ecf0f1; 
+	border: 2px solid #111;
+	transition: all .5s;
+}
+::-webkit-input-placeholder {
+	color: rgba(51, 0, 102, .7);
+	font-size: 1rem;
+} 
+:-ms-input-placeholder  {
+	color: rgba(51, 0, 102, .7);
+	font-size: 1rem;	
+}
+
+::-ms-input-placeholder {
+	color: rgba(51, 0, 102, .7);
+	font-size: 1rem;
+}
+::-moz-placeholder {
+	color: rgba(51, 0, 102, 1);
+	font-size: 1rem;
+}
+.contato form input:focus,textarea:focus {
+	border: 2px solid #2A0A29;
+	box-shadow: 1px 1px 30px rgba(42, 10, 41, .5);
+}
+
+.contato form input[type="submit"]{
+	width: 25%;
+	margin-top: 1%;
+	float: right;
+	font-size: 1.2rem;
+	color: #cfcfcf;
+	background-color: #303;
+	transition: all 0.5s;
+}
+.contato form input[type="submit"]:hover{
+	color: 
+	border: #000;
+	background-color: #fff;
+	transform:; 
 }
 .contato form input,textarea,label {
+	margin-top: 1%;
 	border-radius: 5px;
 	display: block;
 }
 
-/*.contato h1,i {
-	position: relative;
-	z-index: 1;
-	color: #fff;
-}*/
 .contato h1 i {
 	padding-right: 10px;
 	color: #2A0A29;
@@ -203,14 +245,18 @@ article header h1 i {
 	position: relative;
 	z-index: 1;
 	width: 45%;
+	padding: 1%;
+}
+.dados p i {
+	margin-right: 1%;
 }
 .map {
 	float: right;
 	width: 47%;
-	/*border-radius: 10px;*/
+	border-radius: 10px;
 }
 .map iframe {
-	/*border-radius: 10px;*/
+	border-radius: 10px;
 	width: 100%;
 	height: 300px;
 	overflow: hidden;
