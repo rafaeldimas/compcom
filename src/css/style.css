@@ -79,6 +79,7 @@ header {
 .menufixo {
 	top: 0;
 	position: fixed;
+	z-index: 99;
 	transition: all 10s;
 }
 .menu ul {
@@ -182,12 +183,32 @@ article header h1 i {
 .contato form{
 	float: left;
 	position: relative;
-	width: 45%;
+	width: 100%;
 	padding: 1%;
+}
+.contato form input {
+	width: 45%;
+	float: left;
+}
+.contato form textarea {
+	width: 45%;
+	float: right;
+	height: 60%;
+	position: absolute;
+	top: 45px;
+	left: 50%;
+}
+.contato form label[for='mensagem'] {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+}
+.contato form label {
+	clear: both;
 }
 .contato form input,textarea {
 	height: 44px;
-	width: 100%;
+	/*width: 100%;*/
 	background-color: #ecf0f1; 
 	border: 2px solid #111;
 	transition: all .5s;
@@ -215,8 +236,9 @@ article header h1 i {
 }
 
 .contato form input[type="submit"]{
-	width: 25%;
-	margin-top: 1%;
+	width: 15%;
+	margin-top: 7%;
+	margin-right: 4%;
 	float: right;
 	font-size: 1.2rem;
 	color: #cfcfcf;
@@ -240,19 +262,15 @@ article header h1 i {
 	color: #2A0A29;
 	font-weight: 700;
 }
-.dados {
-	float: right;
-	position: relative;
-	z-index: 1;
-	width: 45%;
-	padding: 1%;
-}
-.dados p i {
-	margin-right: 1%;
+.local {
+	/*padding: 1%;*/
+	float: left;
+	width: 100%;
+	background: #f3f3f3;
 }
 .map {
-	float: right;
-	width: 47%;
+	margin: 0 auto;
+	width: 100%;
 	border-radius: 10px;
 }
 .map iframe {
@@ -262,4 +280,14 @@ article header h1 i {
 	overflow: hidden;
 	border: none;
 	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
+}
+.dados {
+	float: right;
+	position: relative;
+	z-index: 1;
+	width: 45%;
+	padding: 1%;
+}
+.dados p i {
+	margin-right: 1%;
 }

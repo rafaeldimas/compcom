@@ -1,3 +1,5 @@
+//Variaveis dos diretorios de arquivos
+
 var filesJS = [
 "./src/js/*.js",
 "./src/imports/owl-carousel/*.js"
@@ -48,6 +50,7 @@ gulp.task('minify-js', function () {
   .pipe(gulp.dest('./dist/js/'));          // pasta de destino do arquivo(s)
 });
 
+// Tarefa de minificação do HTML
 gulp.task('minify-html', function() {
   gulp.src(filesHTML)
   .pipe(htmlmin({collapseWhitespace: true, removeComments: true}))
