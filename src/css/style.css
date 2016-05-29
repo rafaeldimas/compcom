@@ -6,7 +6,7 @@
 	font-family: 'Lato', sans-serif;
 	line-height: 1.4em;
 }
-html,body {	font-size: 16px; background-color: #ecf0f1; }
+html,body {	font-size: 16px; background-color: #ecf0f1; height: 100%;}
 
 input:focus,textarea:focus { outline: none; }
 
@@ -84,7 +84,8 @@ header {
 	top: 0;
 	position: fixed;
 	z-index: 99;
-	transition: all 10s;
+	background-color: rgba(42, 10, 41, 1);
+	transition: all .5s;
 }
 .menu ul {
 	width: 50%;
@@ -150,7 +151,7 @@ header {
 	margin-top: 0;
 }
 
-.contato {
+.orcamento {
 	float: left;
 	padding: 1%;
 	width: 100%;
@@ -160,7 +161,7 @@ header {
 	background-position: center;
 	position: relative;
 }
-.contato::before {
+.orcamento::before {
 	content: '';
 	top: 0;
 	left: 0;
@@ -181,17 +182,17 @@ header {
 .container p {
 	margin-bottom: 1%;
 }
-.contato form{
+.orcamento form{
 	float: left;
 	position: relative;
 	width: 100%;
 	padding: 1%;
 }
-.contato form input {
+.orcamento form input {
 	width: 45%;
 	float: left;
 }
-.contato form textarea {
+.orcamento form textarea {
 	width: 45%;
 	float: right;
 	height: 60%;
@@ -199,15 +200,15 @@ header {
 	top: 45px;
 	left: 50%;
 }
-.contato form label[for='mensagem'] {
+.orcamento form label[for='mensagem'] {
 	position: absolute;
 	top: 10px;
 	left: 50%;
 }
-.contato form label {
+.orcamento form label {
 	clear: both;
 }
-.contato form input,textarea {
+.orcamento form input,textarea {
 	height: 44px;
 	/*width: 100%;*/
 	background-color: #ecf0f1; 
@@ -231,12 +232,12 @@ header {
 	color: rgba(51, 0, 102, 1);
 	font-size: 1rem;
 }
-.contato form input:focus,textarea:focus {
+.orcamento form input:focus,textarea:focus {
 	border: 2px solid #2A0A29;
 	box-shadow: 1px 1px 30px rgba(42, 10, 41, .5);
 }
 
-.contato form input[type="submit"]{
+.orcamento form input[type="submit"]{
 	width: 15%;
 	margin-top: 7%;
 	margin-right: 4%;
@@ -246,35 +247,38 @@ header {
 	background-color: #303;
 	transition: all 0.5s;
 }
-.contato form input[type="submit"]:hover{
+.orcamento form input[type="submit"]:hover{
 	color: 
 	border: #000;
 	background-color: #fff;
 	transform:; 
 }
-.contato form input,textarea,label {
+.orcamento form input,textarea,label {
 	margin-top: 1%;
 	border-radius: 5px;
 	display: block;
 }
 
 .local {
-	padding: 1%;
+	position: relative;
+	padding: 0 1%;
 	float: left;
 	width: 100%;
+	height: 460px;
 	background: #f3f3f3;
 }
 .local h1 {
-	padding-bottom: 1%;
-	padding-left: 1%;
+	padding: 1%;
 }
 .dadoslocal {
 	float: right;
 	margin: 0 auto;
-	padding: 1% 1% 274px;
+	padding: 1%;
 	width: 30%;
-	background-color: #D3D3D3;
+	height: 400px;
+	background-color: rgba(150,0,150, .1);
 	border-radius: 10px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
 .map {
 	float: left;
@@ -290,14 +294,27 @@ header {
 	border: none;
 	box-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
+
+footer {
+	position: relative;
+	top: 1%;
+	float: left;
+	width: 100%;
+}
+
 .dados {
 	float: left;
-	position: relative;
 	z-index: 1;
 	width: 100%;
 	padding: 1%;
 }
 
-.dados p {S
+.dados p {
 	margin-left: 1%;
+}
+
+.voltar {
+	position: fixed;
+	bottom: 5%;
+	right: 2%;
 }
