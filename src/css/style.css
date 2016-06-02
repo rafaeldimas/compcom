@@ -248,10 +248,10 @@ header {
 	transition: all 0.5s;
 }
 .orcamento form input[type="submit"]:hover{
-	color: 
-	border: #000;
-	background-color: #fff;
-	transform:; 
+	color: #220A29;
+	border: 2px solid #220A29;
+	background-color: #E8DFFF;
+	transform: scale(1.1); 
 }
 .orcamento form input,textarea,label {
 	margin-top: 1%;
@@ -296,25 +296,16 @@ header {
 }
 
 footer {
+	margin-top: 1%;
 	position: relative;
-	top: 1%;
-	float: left;
 	width: 100%;
-}
-
-.dados {
 	float: left;
-	z-index: 1;
+	background-color: #8181F7;
+	text-align: center;
 	width: 100%;
-	padding: 1%;
+	color: #f5f5f5;
 }
-
-.dados p {
-	margin-left: 1%;
-}
-
-.voltar {
-	position: fixed;
-	bottom: 5%;
-	right: 2%;
+.contato {
+	text-align: left;
+	margin: 1%;
 }
