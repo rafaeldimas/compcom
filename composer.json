@@ -1,0 +1,17 @@
+{
+    "name": "rafael/compcom",
+    "description": "site compsom",
+    "authors": [
+        {
+            "name": "Rafael Trabalho",
+            "email": "rafael_citotame@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "App/",
+    		"Core\\": "Core/"
+    	}
+    }
+}
