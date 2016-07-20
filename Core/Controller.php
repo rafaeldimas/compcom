@@ -1,13 +1,25 @@
 <?php
 
-	namespace Core;
+namespace Core;
 
-	class Controller
+use Core\MakeViews;
+
+
+class Controller
+{
+	public $view;
+	public $namepage;
+
+	public function view($viewname, $parans = null)
 	{
-		public $teste;
-		
-		function __construct()
-		{
-			
-		}
+		$this->setNamePage($parans['namepage']);
+		$make = new MakeViews();
+		return $make->make($viewname,$parans);
 	}
+
+	private final function setNamePage($namepage)
+	{
+		return $this->namepage = $namepage;
+
+	}
+}

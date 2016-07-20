@@ -1,0 +1,14 @@
+
+    <?php
+        $js = new \Core\Model;
+        $js->assests(ASSETS);
+
+        if ($js->assestsJson['js'] == true) {
+            foreach ($js->assestsJson['js'] as $key => $value) {
+                echo '<script type="text/javascript" src="./Public/js/'.$value.'"></script>';
+            }
+        }
+    ?>
+
+</body>
+</html>

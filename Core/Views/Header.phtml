@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title><?= TITLE.' - '. $assests['namepage'] ?></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" sizes="16x16" href="./Public/css/img/favicon-16.png">
+    <link rel="icon" sizes="32x32" href="./Public/css/img/favicon-32.png">
+    <meta name="theme-color" content="#7401DF">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <?php
+        use \Core\Model;
+
+        $css = new \Core\Model;
+        $css->assests(ASSETS);
+
+        if ($css->assestsJson['css'] == true) {
+            foreach ($css->assestsJson['css'] as $key => $value) {
+                echo '<link rel="stylesheet" href="./Public/css/'.$value.'">';
+            }
+        }
+    ?>
+</head>
+<body>

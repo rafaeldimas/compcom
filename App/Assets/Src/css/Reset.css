@@ -1,0 +1,27 @@
+/*===========RESET BASICO==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.4em;
+}
+html,body { font-size: 16px; background-color: #ecf0f1; height: 100%;}
+
+input:focus,textarea:focus { outline: none; }
+
+p { font-size: 1rem; }
+
+h1 { font-size: 1.5rem; font-weight: 700; color: #4B0082; text-transform: uppercase; }
+
+h2 { font-size: 1.25rem; color: #606; text-transform: uppercase; }
+
+h3 { font-size: 1.15rem; color: #111; text-transform: uppercase; }
+
+ul { list-style: none; }
+
+a { text-decoration: none; }
+
+img { max-width: 100%; }
+
+i { padding-right: 10px; color: #2A0A29; font-weight: 700; }

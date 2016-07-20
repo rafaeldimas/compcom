@@ -1,9 +1,8 @@
 <?php
 
-	require_once './vendor/autoload.php';
+require_once './vendor/autoload.php';
+require_once 'config.php';
 
-	$teste = new App\Controllers\IndexController;
+$app = new Core\Http\Router;
 
-	echo "<pre>";
-	var_dump($_SERVER);
-	echo "</pre>";
+$app->Route(URL);
