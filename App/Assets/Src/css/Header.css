@@ -67,6 +67,7 @@ header {
     float: left;
     padding: 14px 15px;
     color: #F2F2F2;
+    cursor: pointer;
     transition: all .5s;
 }
 @keyframes menu {

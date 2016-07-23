@@ -29,8 +29,9 @@ define('ASSETS', '{
                         "Index.js"
                     ]
                   }');
+define('DRIVE', 'mysql:');
+define('HOST', 'host=localhost;');
+define('DBNAME', 'dbname=compcom');
+define('USER', 'root');
+define('PASS', 'cito');
 
-$teste = ASSETS;
-
-$teste2 = json_decode($teste);
-$teste3 = json_decode($teste, true);

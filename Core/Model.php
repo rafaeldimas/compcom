@@ -2,9 +2,14 @@
 
 namespace Core;
 
+use \PDO;
+use Core\Helpers\CRUD;
+
+
 class Model
 {
     public $assestsJson;
+    protected $con;
 
     public function assests($assests)
     {
@@ -19,5 +24,9 @@ class Model
                 return '<script type="text/javascript" src="./Public/js/'.$value.'"></script>';
             }
         }
+    }
+    public function acessaCRUD()
+    {
+        $this->con = new CRUD;
     }
 }
